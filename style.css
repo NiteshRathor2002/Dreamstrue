@@ -1,0 +1,133 @@
+body{
+    font-family: 'poppins',sans-serif;
+}
+.custom-bg{
+    background-color: #2ec1ac ;
+}
+.custom-bg:hover{
+    background-color: #279e8c ;
+}
+.check{
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+}
+@media screen and (max-width:575px){
+    .check{
+        margin-top: 0;
+        padding:0 35px;
+    }
+}
+
+.suggestions-list {
+    position: absolute;
+z-index: 1000;   
+    width: 100%;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+.position-relative {
+    position: relative;
+}
+.offers{
+    border-radius: 5px;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.backgr{
+    
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    
+}
+.change:hover{
+    color:rgb(107, 105, 102);
+
+}
+.client-image{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+}
+
+.user-image{
+    border-radius: 50%;
+}
+
+
+/*---------hotel------------------------*/
+.bd-best {
+    height: calc(230px + 3rem);
+    padding: 0.5rem 0;
+    overflow: hidden;
+    position: relative;
+  }
+ 
+
+  .bd-best-list {
+    align-items: stretch;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 1rem;
+    -webkit-animation-name: bdBestCarousel;
+    animation-name: bdBestCarousel;
+  }
+  
+  .bd-best-item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 16px;
+    transition-duration: 85ms;
+    transition-property: box-shadow,transform;
+    
+
+  }
+
+  .bd-best-item:hover {
+    box-shadow: 0 1em 1em rgba(0,0,0,.1);
+    transform: translateY(-.1em);
+  }
+  .kl_img{
+    width:500px;
+  }
+ /*
+  .bd-best-list:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+    */
+
+  @keyframes bdBestCarousel{
+  100%{
+       transform: translateX(calc(-155% + 3120px)); 
+  }
+} 
+
+
+@media (min-width: 3700px) {
+
+.bd-best {
+    min-height: 400px;
+  }
+  
+.bd-best-item {
+    width: 100%;
+    height: 100px;
+        }	
+.bd-best-list {
+    animation-duration: 80s;
+        }
+.kl_img{
+    width: 500px;
+
+}
+
+}
+    
+         
